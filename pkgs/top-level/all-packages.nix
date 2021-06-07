@@ -13098,6 +13098,8 @@ in
   cmake-language-server = python3Packages.callPackage ../development/tools/cmake-language-server {
     inherit (pkgs) cmake;
   };
+  
+  xmake = callPackage ../development/tools/build-managers/xmake { };
 
   # Does not actually depend on Qt 5
   inherit (plasma5Packages) extra-cmake-modules;
